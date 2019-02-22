@@ -1,0 +1,16 @@
+
+.flexItem {
+    border: 5px solid blue;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    text-align: center;
+}
+
+.itemDiv {
+    border: 3px solid red;
+    width: 200px;
+    height: 200px;
+}

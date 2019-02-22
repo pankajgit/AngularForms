@@ -1,0 +1,6 @@
+[
+    {"fullName" : "Pankaj", "age": 30, "salary": 500, "address": "pune", "isEmp": true },
+    {"name" : "Yogesh", "age": 28, "salary": 600 },
+    {"name" : "Supriya", "age": 40, "salary": 700 },
+    {"name" : "Dheeraj", "age": 29, "salary": 800 }
+]

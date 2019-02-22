@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "routing-app-test": {
+    "angular-trial-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/routing-app-test",
+            "outputPath": "dist/angular-trial-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -27,7 +27,9 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "src/scss/styles.scss"
             ],
             "scripts": []
           },
@@ -61,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "routing-app-test:build"
+            "browserTarget": "angular-trial-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "routing-app-test:build:production"
+              "browserTarget": "angular-trial-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "routing-app-test:build"
+            "browserTarget": "angular-trial-app:build"
           }
         },
         "test": {
@@ -106,7 +108,7 @@
         }
       }
     },
-    "routing-app-test-e2e": {
+    "angular-trial-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
       "prefix": "",
@@ -115,11 +117,11 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "routing-app-test:serve"
+            "devServerTarget": "angular-trial-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "routing-app-test:serve:production"
+              "devServerTarget": "angular-trial-app:serve:production"
             }
           }
         },
@@ -135,5 +137,5 @@
       }
     }
   },
-  "defaultProject": "routing-app-test"
+  "defaultProject": "angular-trial-app"
 }
